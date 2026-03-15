@@ -1,0 +1,91 @@
+/* py.css */
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body theme */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #f8fafc;
+  line-height: 1.45;
+}
+
+/* container */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1.25rem;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 14px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* cards */
+.card {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* heading */
+h1, h2, h3 {
+  color: #e2e8f0;
+  margin-bottom: 0.75rem;
+}
+
+/* button */
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #f8fafc;
+  background: #2563eb;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+.btn:hover {
+  background: #1d4ed8;
+  border-color: rgba(148, 163, 184, 0.5);
+}
+
+/* form elements */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.68rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 8px;
+  background: #0f172a;
+  color: #e2e8f0;
+  margin-bottom: 0.75rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.28);
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0.75rem;
+    margin: 1rem auto;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
