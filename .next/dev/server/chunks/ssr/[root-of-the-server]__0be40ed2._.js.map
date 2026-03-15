@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/KIIT0001/Documents/GitHub/blockchain-voting-dapp/pages/index.js"],"sourcesContent":["import React from 'react'\r\n\r\nconst HOME = () => {\r\n  return (\r\n    <div>HOME</div>\r\n  )\r\n}\r\n\r\nexport default HOME"],"names":[],"mappings":";;;;;AAAA;;;AAEA,MAAM,OAAO;IACX,qBACE,qKAAC;kBAAI;;;;;;AAET;uCAEe"}}]
+}
