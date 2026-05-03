@@ -1,11 +1,12 @@
+const hre = require("hardhat");
 async function main() {
-  const Voting = await ethers.getContractFactory("Voting");
+  const Create = await ethers.getContractFactory("Create");
 
-  const voting = await Voting.deploy();
+  const create = await Create.deploy();
 
-  await voting.waitForDeployment();
+  await create.waitForDeployment();
 
-  console.log("Voting contract deployed to:", await voting.getAddress());
+  console.log("Create contract deployed to:", await create.getAddress());
 }
 
 main().catch((error) => {
