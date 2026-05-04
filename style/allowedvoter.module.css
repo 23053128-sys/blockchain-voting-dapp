@@ -1,0 +1,115 @@
+/* ===== GLOBAL ===== */
+body {
+    background: linear-gradient(135deg, #1a1633, #2b1f5c);
+    font-family: 'Inter', sans-serif;
+    color: #eaeaf0;
+}
+
+/* ===== MAIN GRID ===== */
+.createVoter {
+    width: 90%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+/* ===== GLASS CARD BASE ===== */
+.cardStyle {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* ===== VOTER INFO ===== */
+.voterInfo {
+    composes: cardStyle;
+    text-align: center;
+}
+
+.voterInfo img {
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* ===== SIDE INFO ===== */
+.sideInfo {
+    composes: cardStyle;
+}
+
+.sideInfo_box h4 {
+    background: linear-gradient(90deg, #9a02ac, #ff4ecd);
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.sideInfo_para {
+    margin-top: 0.5rem;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* ===== VOTER FORM ===== */
+.voter {
+    composes: cardStyle;
+}
+
+.input_container input {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+/* ===== BUTTON ===== */
+.button button {
+    background: linear-gradient(90deg, #9a02ac, #ff4ecd);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.button button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 78, 205, 0.4);
+}
+
+/* ===== CARD GRID ===== */
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.card_box {
+    background: rgba(255,255,255,0.05);
+    padding: 1rem;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card_box:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.08);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .createVoter {
+        grid-template-columns: 1fr;
+    }
+}
