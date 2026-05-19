@@ -14,8 +14,10 @@ body {
     gap: 2rem;
 }
 
-/* ===== GLASS CARD BASE ===== */
-.cardStyle {
+/* ===== COMMON CARD STYLE ===== */
+.voterInfo,
+.sideInfo,
+.voter {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(12px);
     border-radius: 20px;
@@ -26,7 +28,6 @@ body {
 
 /* ===== VOTER INFO ===== */
 .voterInfo {
-    composes: cardStyle;
     text-align: center;
 }
 
@@ -39,10 +40,6 @@ body {
 }
 
 /* ===== SIDE INFO ===== */
-.sideInfo {
-    composes: cardStyle;
-}
-
 .sideInfo_box h4 {
     background: linear-gradient(90deg, #9a02ac, #ff4ecd);
     padding: 0.5rem;
@@ -56,11 +53,7 @@ body {
     opacity: 0.8;
 }
 
-/* ===== VOTER FORM ===== */
-.voter {
-    composes: cardStyle;
-}
-
+/* ===== INPUTS ===== */
 .input_container input {
     width: 100%;
     padding: 0.7rem;

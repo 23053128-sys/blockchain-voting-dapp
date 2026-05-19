@@ -1,0 +1,110 @@
+.voterList {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #1a002b, #2d0b3f);
+  color: white;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.title {
+  font-size: 38px;
+  font-weight: bold;
+  color: #ff7de9;
+}
+
+.wallet {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid #ff4fd8;
+  color: #ffd6f7;
+  font-weight: bold;
+}
+
+/* BUTTON */
+
+.connectButton {
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #ff4fd8, #ff7de9);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.connectButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 0px 20px rgba(255, 79, 216, 0.4);
+}
+
+/* GRID */
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* EMPTY */
+
+.empty {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.empty p {
+  color: #ffb3ef;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* REFRESH BUTTON */
+
+.refreshButton {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #ff4fd8, #ff7de9);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.refreshButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(255, 79, 216, 0.5);
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 768px) {
+  .voterList {
+    padding: 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .cardGrid {
+    grid-template-columns: 1fr;
+  }
+}
